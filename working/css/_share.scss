@@ -1,0 +1,112 @@
+// VAR
+	$color: #008bc4;
+	$color-hover: #172d83;
+	$color-text: #404041;
+// END VAR
+
+//MIXIN
+	@mixin content{
+		display: block;
+		float: left;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		position: relative;
+	}
+
+	@mixin transition{
+		transition: all 0.2s ease-out 0s;
+		-webkit-transition: all 0.2s ease-out 0s;
+	}
+
+	@mixin transition-slow{
+		transition: all 0.5s ease-out 0s;
+		-webkit-transition: all 0.5s ease-out 0s;
+	}
+
+	@mixin shadow{
+		-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.15);
+	}
+
+	@mixin shadow-both{
+		-webkit-box-shadow: 0px 28px 57px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 28px 57px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 28px 57px 0px rgba(0,0,0,0.75);
+	}
+	@mixin center{
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	@mixin filter{
+		filter: drop-shadow(1px 1px 1px $color);
+	    -moz-filter: drop-shadow(1px 1px 1px $color);
+	    -webkit-filter: drop-shadow(1px 1px 1px $color);
+	}
+	@mixin flex{
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	}
+
+	@mixin center{
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -ms-flex-align: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	}
+
+	@mixin right{
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -ms-flex-pack: right;
+	    -webkit-justify-content: right;
+	    justify-content: right;
+	    -ms-flex-align: right;
+	    -webkit-align-items: right;
+	    align-items: right;
+	}
+//END MIXIN
+
+/*Body*/
+	body{
+		font-family: 'OpenSans', 'Arial', sans-serif;
+		font-size: 14px;
+		background: #fff;
+		overflow-x: hidden;
+	}
+	img{
+		max-width: 100%;
+	}
+	a{cursor: pointer}
+	a:hover{text-decoration: none;}
+	
+	.no-style{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	.btn{		
+	    padding: 0;
+	    margin: 0;
+	    border-radius: 0;
+	    font-size: 14px;	
+	    text-transform: initial;
+	}
+	.flex{
+		@include flex;
+	}
+
+@media (min-width: 900px){
+	.container{
+		width: 100%;
+		max-width: 890px;
+	}
+}

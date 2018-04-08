@@ -1,0 +1,120 @@
+@media (max-width: 800px){
+	body{
+		padding-top: 60px;
+	}
+	#header,
+	.banner .owl-nav{
+		display: none;
+	}
+	#header-responsive{
+		display: block;
+	}
+	.section-2 .right .text{
+		text-align: initial;
+	}
+	.section-3 .left h2{
+		font-size: 50px;
+	}
+	.section-2 .left{
+		width: 100%;
+		text-align: left;
+		h2{
+			font-size: 50px;
+		}
+	}
+	.section-2 .right{
+		width: 100%;
+		.text{
+			line-height: 1.4;
+			letter-spacing: 0
+		}
+	}
+	.section-3 .flex{
+		display: block;
+	}
+	.section-3 .left,
+	.section-3 .right{
+		width: 100%;
+	}
+	.section-4 ul{
+		max-width: 250px;
+		margin: auto;
+		li{
+			width: 100%;
+			margin-bottom: 10px;
+			+ li{
+				margin-left: 0;
+			}
+		}
+	}
+	#footer{
+		.footer-top{
+			.left{
+				h3{
+					font-size: 50px;
+				}
+				.list > li span{
+					display: block;
+					width: 100%;
+					float: left;
+				}
+				.list > li .social{
+					display: block;
+					width: 100%;
+					padding-top: 5px;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px){
+	#footer .footer-top .left .list > li span{
+		padding: 0;
+		font-size: 18px;
+	}
+	#footer .footer-top .left,
+	#footer .footer-top .right{
+		width: 100%;
+		text-align: left;
+	}
+	#footer .footer-top .right{
+		margin-top: 15px;
+		.logo{
+			margin-bottom: 20px;
+		}
+	}
+	.list-people ul li{
+		width: 50%;
+	}
+	.section-3 .left ul li{
+		font-size: 18px;
+		&:before{
+			top: 7px;
+		}
+	}
+	.section-3 .left, .section-3 .right{
+		padding: 5px 10px;
+	}
+	.parallax{
+		height: 200px;
+	}
+	.section-1 ul{
+		li{
+			margin: 5px 0;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 450px){
+	.section-3 .left h2,
+	.section-2 .left h2,
+	#footer .footer-top .left h3{
+		font-size: 36px;
+	}
+	.banner .child .caption{
+		font-size: 20px;
+	}
+}
